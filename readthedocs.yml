@@ -1,0 +1,33 @@
+# .readthedocs.yml
+
+# Required RTD format version
+version: 2
+
+# Build documentation in the following formats
+formats:
+  - html
+  - pdf
+  - epub
+
+# Python configuration
+python:
+  version: 3.9
+  install:
+    - requirements: requirements.txt
+
+# Sphinx configuration
+sphinx:
+  configuration: docs/conf.py
+
+# Build documentation in the following formats
+formats:
+  - html
+  - pdf
+  - epub
+
+# Optionally set the build image
+build:
+  image: latest
+
+# Define additional settings for the build process
+# You can specify additional configuration options like using conda, etc.
